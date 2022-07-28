@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
     provider = "postgres" // NOTE: sqlite does not work with NextAuth.js
-    url      = "postgresql://postgres:admin@localhost:5432/my-t3-app?schemas=public"
+    url      = env("DATABASE_URL")
 }
 
 model Example {
