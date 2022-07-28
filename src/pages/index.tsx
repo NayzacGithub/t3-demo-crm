@@ -8,6 +8,7 @@ type TechnologyCardProps = {
   documentation: string;
 };
 
+
 const Home: NextPage = () => {
   const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
 
